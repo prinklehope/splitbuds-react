@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Login.css';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   return (
@@ -19,11 +20,12 @@ const LoginPage = () => {
               <label>Password</label>
               <input type="password" placeholder="Enter your password" />
             </div>
-
-            <button type="submit" className="login-button">Log In</button>
+            <Link to='/dashboard'> 
+            <button className="login-button">Log In</button>
+            </Link>
 
             <div className="separator">
-              <hr /><span>or</span><hr />
+              <hr /> <span> or </span><hr />
             </div>
 
             <div className="social-buttons">
@@ -33,22 +35,26 @@ const LoginPage = () => {
           </form>
         </div>
       </div>
-
       <div className="right-section">
         <img src="/src/assets/1.png" alt="Friends splitting expenses" className="login-image" />
         <h2 style={{marginBottom: "1rem", color: "white"}}>Why SplitBuds?</h2>
         <div className="features-grid">
-          {[
-            { title: 'Smart Splitting', desc: 'Split bills equally or by custom amounts' },
-            { title: 'Group Management', desc: 'Create and manage multiple expense groups' },
-            { title: 'Instant Settlements', desc: 'Get the simplest way to settle debts' },
-            { title: 'Transaction History', desc: 'Track all your shared expenses easily' }
-          ].map((feature, index) => (
-            <div key={index} className="feature-card">
-              <h3>{feature.title}</h3>
-              <p>{feature.desc}</p>
-            </div>
-          ))}
+          <div className="feature-card">
+            <h3>Smart Splitting</h3>
+            <p>Split bills equally or by custom amounts</p>
+          </div>
+          <div className="feature-card">
+            <h3>Group Management</h3>
+            <p>Create and manage multiple expense groups</p>
+          </div>
+          <div className="feature-card">
+            <h3>Instant Settlements</h3>
+            <p>Get the simplest way to settle debts</p>
+          </div>
+          <div className="feature-card">
+            <h3>Transaction History</h3>
+            <p>Track all your shared expenses easily</p>
+          </div>
         </div>
       </div>
     </div>

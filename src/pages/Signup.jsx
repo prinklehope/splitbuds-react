@@ -1,31 +1,6 @@
-import React, { useState } from 'react';
 import "../styles/Signup.css";
 
 const SignupPage = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    confirmPassword: ''
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add signup logic here
-    if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match");
-      return;
-    }
-    console.log("Signup submitted", formData);
-  };
-
   return (
     <div className="signup-container">
       <div className="signup-left">
@@ -41,6 +16,14 @@ const SignupPage = () => {
               <h3>Simplified Settlements</h3>
               <p>Get intelligent suggestions for settling group expenses</p>
             </div>
+            <div className="benefit-card">
+              <h3>Group Management</h3>
+              <p>Create and manage multiple expense groups effortlessly</p>
+            </div>
+            <div className="benefit-card">
+              <h3>Instant Notifications</h3>
+              <p>Stay updated with real-time notifications for all transactions</p>
+            </div>
           </div>
         </div>
       </div>
@@ -50,16 +33,14 @@ const SignupPage = () => {
             <h1>Create Your Account</h1>
             <p>Start managing shared expenses effortlessly</p>
           </div>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className="form-group">
               <label>Email</label>
               <input 
                 type="email" 
                 name="email"
                 placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required 
+                
               />
             </div>
             <div className="form-group">
@@ -68,9 +49,7 @@ const SignupPage = () => {
                 type="password" 
                 name="password"
                 placeholder="Create a password"
-                value={formData.password}
-                onChange={handleInputChange}
-                required 
+                
               />
             </div>
             <div className="form-group">
@@ -79,9 +58,7 @@ const SignupPage = () => {
                 type="password" 
                 name="confirmPassword"
                 placeholder="Confirm your password"
-                value={formData.confirmPassword}
-                onChange={handleInputChange}
-                required 
+                
               />
             </div>
             <button type="submit" className="signup-button">
