@@ -17,12 +17,9 @@
   padding-bottom: 2rem;
   height: 100vh;
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--gray-400) var(--bg-surface);
 }
 
 
-/* Header */
 .main-header {
   display: flex;
   align-items: center;
@@ -43,7 +40,6 @@
   gap: 1.5rem;
 }
 
-/* Expense Card */
 .expense-card {
   background-color: var(--bg-surface);
   border-radius: 1rem;

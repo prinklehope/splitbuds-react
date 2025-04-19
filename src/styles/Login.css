@@ -23,7 +23,6 @@
   background-color: #121212;
   padding: 2rem;
   position: relative;
-  z-index: 2;
 }
 
 .form-container {
@@ -176,7 +175,6 @@ input {
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 
 .login-image {

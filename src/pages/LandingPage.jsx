@@ -19,7 +19,7 @@ function LandingPage() {
             About
           </a>
           <a href="#pricing" className="sb-nav-link">
-            Pricing
+            Plans
           </a>
         </nav>
         <div className="sb-nav-btn">
@@ -42,7 +42,7 @@ function LandingPage() {
                     Simply Expenses, Simplify Friendships
                   </h1>
                   <p className="sb-hero-description">
-                    Split Buds makes it easy to manage group expenses and track
+                    Split Buds makes it easy to manage group expenses. But now we introduce to our new and exclusive feature,track
                     your personal finances in one place.
                   </p>
                 </div>
@@ -88,8 +88,7 @@ function LandingPage() {
               <h1 className="sb-badge">Features</h1>
               <h2 className="sb-section-title">Everything You Need</h2>
               <p className="sb-section-description">
-                Split Buds offers a comprehensive suite of tools for both group
-                expense splitting and personal finance management.
+                Split Buds offers a comprehensive suite of tools for group expenses but now we can also track your personal expenses
               </p>
             </div>
 
@@ -103,13 +102,16 @@ function LandingPage() {
                 </p>
               </div>
 
-              <div className="sb-feature-card">
-                <div className="sb-feature-icon">💳</div>
+              <div className="sb-feature-card exclusive">
+                <div className="sb-feature-icon">
+                  <p>💳</p>
+                <h1 className="sb-badge exclusive-badge">Exclusive</h1>
+                </div>
                 <h3 className="sb-feature-title">
                   Personal Expense Management
                 </h3>
                 <p className="sb-feature-description">
-                  Track individual monthly expenses with detailed reports.
+                  Now track individual monthly expenses with detailed reports.
                 </p>
               </div>
 
@@ -201,12 +203,12 @@ function LandingPage() {
         <section id="pricing" className="sb-pricing-section">
           <div className="sb-container">
             <div className="sb-section-header">
-              <h1 className="sb-badge">Pricing</h1>
+              <h1 className="sb-badge">Plans</h1>
               <h2 className="sb-section-title">
                 Find The Best Plan For Yourself
               </h2>
               <p className="sb-section-description">
-                Choose the best monthly plan for your needs.{" "}
+                Choose the best monthly plan for your needs.
               </p>
             </div>
 
@@ -298,11 +300,10 @@ function LandingPage() {
       </main>
       <footer className="sb-footer">
         <div className="sb-copyright">
-          © 2024 Split Buds. All rights reserved.
+          2024 Split Buds. All rights reserved.
         </div>
         <div className="sb-footer-nav">
           <p className="sb-footer-link">Terms of Service</p>
-          <p className="sb-footer-link">Privacy</p>
           <p className="sb-footer-link">Contact</p>
         </div>
       </footer>

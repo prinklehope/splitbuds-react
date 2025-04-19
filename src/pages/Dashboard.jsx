@@ -25,23 +25,7 @@ export default function DashboardPage() {
       date: "2 days ago",
       group: "Weekend Trip",
       participants: 5,
-    },
-    {
-      id: 4,
-      name: "Utility Bills",
-      amount: 130.25,
-      date: "3 days ago",
-      group: "Roommates",
-      participants: 3,
-    },
-    {
-      id: 5,
-      name: "Gas for Road Trip",
-      amount: 60.0,
-      date: "5 days ago",
-      group: "Weekend Trip",
-      participants: 4,
-    },
+    }
   ];
 
   return (
@@ -56,7 +40,6 @@ export default function DashboardPage() {
         </div>
 
         <div className="dashboard-content">
-          {/* Overview Content */}
           <section className="overview-section">
             <div className="stats-grid">
               <div className="stat-card">
@@ -112,7 +95,6 @@ export default function DashboardPage() {
                 <h2>Expense Summary</h2>
               </div>
               <div className="summary-chart">
-                {/* Placeholder for chart visualization */}
                 <div className="chart-placeholder">
                   <p>Expense Distribution Chart</p>
                 </div>

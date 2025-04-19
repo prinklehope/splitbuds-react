@@ -57,31 +57,6 @@
   position: relative;
 }
 
-.nav-item::before {
-  position: absolute;
-  left: 1rem;
-  font-size: 1rem;
-}
-
-.home-icon::before {
-  content: "🏠";
-}
-
-.groups-icon::before {
-  content: "👥";
-}
-
-.expenses-icon::before {
-  content: "💳";
-}
-
-.settings-icon::before {
-  content: "⚙️";
-}
-
-.help-icon::before {
-  content: "❓";
-}
 
 .nav-item:hover {
   background-color: var(--gray-100);

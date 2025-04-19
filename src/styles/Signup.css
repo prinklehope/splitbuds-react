@@ -1,6 +1,6 @@
 .signup-container {
   display: flex;
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: #0a0a0a;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -9,6 +9,7 @@
 
 .signup-left {
   flex: 1;
+  max-height: 100vh;
   background: linear-gradient(135deg, #2b0078, #3a0ca3);
   color: #171717;
   display: flex;
@@ -23,7 +24,12 @@
 .signup-left > div {
   max-width: 500px;
   position: relative;
-  z-index: 2;
+}
+
+.signup-image{
+  width: 50%;
+  max-width: 450px;
+  border-radius: 1.5rem;
 }
 
 .logo {
@@ -130,25 +136,7 @@
   background-color: #121212;
   padding: 2rem;
   position: relative;
-  z-index: 2;
 }
-
-.back-link {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #a0a0a0;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.back-link:hover {
-  color: #4368ee;
-}
-
 
 .signup-form {
   width: 100%;
@@ -184,22 +172,6 @@
   position: relative;
 }
 
-.input-wrapper {
-  position: relative;
-}
-
-.input-icon {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  color: #a0a0a0;
-  z-index: 2;
-  pointer-events: none;
-}
-
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
@@ -218,17 +190,6 @@
   color: #e8e8e8;
 }
 
-.form-group input:focus {
-  outline: none;
-  border-color: #4368ee;
-}
-
-.form-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
 
 .terms-check {
   display: flex;
@@ -334,21 +295,4 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
-
-.social-btn:hover {
-  color: #ffffff;
-}
-
-.social-btn svg {
-  width: 18px;
-  height: 18px;
-}
-
-.google-btn {
-  color: #EA4335;
-}
-
-.facebook-btn {
-  color: #4267B2;
 }

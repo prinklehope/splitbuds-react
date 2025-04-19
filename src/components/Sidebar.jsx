@@ -7,7 +7,9 @@ const Sidebar = ({ currentPath = "/dashboard" }) => {
     <div className="sidebar">
       <div className="sidebar-header">
         <img src="" alt="" className="logo-icon"></img>
-        <span className="logo-text">Split Buds</span>
+        <Link to="/" className="logo-link">
+        <span className="logo-text">Split Buds</span> 
+        </Link>
       </div>
       <nav className="sidebar-nav">
         <Link to="/dashboard" className={`nav-item home-icon ${currentPath === "/dashboard" ? "active" : ""}`}

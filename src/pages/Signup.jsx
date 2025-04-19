@@ -1,4 +1,5 @@
 import "../styles/Signup.css";
+import { Link } from 'react-router-dom';
 
 const SignupPage = () => {
   return (
@@ -15,14 +16,6 @@ const SignupPage = () => {
             <div className="benefit-card">
               <h3>Simplified Settlements</h3>
               <p>Get intelligent suggestions for settling group expenses</p>
-            </div>
-            <div className="benefit-card">
-              <h3>Group Management</h3>
-              <p>Create and manage multiple expense groups effortlessly</p>
-            </div>
-            <div className="benefit-card">
-              <h3>Instant Notifications</h3>
-              <p>Stay updated with real-time notifications for all transactions</p>
             </div>
           </div>
         </div>
@@ -61,9 +54,11 @@ const SignupPage = () => {
                 
               />
             </div>
-            <button type="submit" className="signup-button">
+            <Link to="/dashboard"> 
+            <button className="signup-button">
               Create Account
             </button>
+            </Link>
             <div className="login-link">
               <p>Already have an account? <a href="#login">Log In</a></p>
             </div>
